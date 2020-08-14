@@ -2,7 +2,7 @@ import React from 'react';
 import s from './PanelFilter.module.css'
 
 
-export const PanelSearch= (props) => {
+export const PanelSearch= () => {
 
 
     return (

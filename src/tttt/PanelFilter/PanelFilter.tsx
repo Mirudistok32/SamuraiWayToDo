@@ -2,7 +2,7 @@ import React from 'react';
 import s from './PanelFilter.module.css'
 import { Select } from './Select/Select';
 
-export const PanelFilter = (props) => {
+export const PanelFilter = () => {
 
     return (
         <div className="app__filter">

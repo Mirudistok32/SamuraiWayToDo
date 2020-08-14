@@ -2,7 +2,7 @@ import React from 'react';
 import s from './PanelAddTasks.module.css'
 
 
-export const PanelAddTasks = (props) => {
+export const PanelAddTasks = () => {
 
 
     return (

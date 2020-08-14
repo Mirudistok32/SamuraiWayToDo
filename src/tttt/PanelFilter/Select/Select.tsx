@@ -3,7 +3,7 @@ import s from './Select.module.css'
 
 
 
-export function Select(props) {
+export function Select() {
 
 
     return (
