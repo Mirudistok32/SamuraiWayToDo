@@ -1,0 +1,10 @@
+.select{
+    
+}
+.selectActive{
+    border: 1px solid salmon;
+    background-color: salmon;
+}
+.selectDefault{
+    background-color: white;
+}

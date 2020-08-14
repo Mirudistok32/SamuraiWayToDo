@@ -1,0 +1,29 @@
+body,
+html,
+#root {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d2d0e;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: transparent;
+}
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+select{
+  cursor: pointer;
+}
