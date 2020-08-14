@@ -1,32 +1,8 @@
-import React, { useState, ChangeEvent } from 'react';
-import { TasksType } from '../App';
-// import s from './PanelAddTasks.module.css'
+import React from 'react';
+import s from './PanelAddTasks.module.css'
 
-type PropsType = {
-    tasks: Array<TasksType>
-    addNewTask: (title: string) => void
-    selectedAll: (value: boolean) => void
-}
 
-export const PanelAddTasks: React.FC<PropsType> = (props) => {
-
-    const { addNewTask, selectedAll, tasks } = props
-    const [value, setValue] = useState<string>('')
-
-    const isInputValueChecked = tasks.some(t => t.isDone)
-
-    const onChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
-        setValue(e.currentTarget.value)
-    }
-
-    const onAddNewTask = () => {
-        addNewTask(value)
-        setValue('')
-    }
-
-    const onSelectedAll = (e: ChangeEvent<HTMLInputElement>) => {
-        selectedAll(e.currentTarget.checked)
-    }
+export const PanelAddTasks = () => {
 
 
     return (
@@ -34,15 +10,13 @@ export const PanelAddTasks: React.FC<PropsType> = (props) => {
             <input
                 type="text"
                 placeholder='Задач мало не бывает!'
-                value={value}
-                onChange={(e) => onChangeValue(e)}
             />
 
             <label htmlFor="selecteAll">Выбрать все</label>
-            <input type="checkbox" id='selecteAll' onChange={onSelectedAll} checked={isInputValueChecked} />
+            <input type="checkbox" id='selecteAll' />
 
             <span>Добавить</span>
-            <button onClick={onAddNewTask}>+</button>
+            <button >+</button>
         </div>
     );
 }

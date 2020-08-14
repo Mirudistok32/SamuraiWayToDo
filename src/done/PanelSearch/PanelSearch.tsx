@@ -1,8 +1,11 @@
 import React from 'react';
 import s from './PanelFilter.module.css'
 
+type PropsType = {
 
-export const PanelSearch= () => {
+}
+
+export const PanelSearch: React.FC<PropsType> = (props) => {
 
 
     return (
