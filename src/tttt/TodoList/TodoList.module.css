@@ -1,0 +1,11 @@
+.todolist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.todolist__element-done{
+    opacity: 0.5;
+}
+.todolist__element-important{
+    background-color: salmon;
+}
