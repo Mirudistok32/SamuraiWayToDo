@@ -28,6 +28,7 @@ export const TodoList: React.FC<PropsType> = (props) => {
             setImportant(!task.important, task.id)
         }
 
+       
         return (
             <li key={task.id} className={task.isDone ? s['todolist__element-done'] : ''} >
                 <input type="checkbox" checked={task.isDone} onChange={onChangeChecked} />
